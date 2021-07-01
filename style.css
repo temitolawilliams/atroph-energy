@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: "Viaoda Libre", cursive;
+}
+h1 {
+  margin-left: 10px;
+  font-size: 2.3rem;
+}
+h5 {
+  font-size: 1.9rem;
+  font-weight: lighter;
+}
+h6 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 60px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(222, 184, 135, 0.5);
+  min-height: 8vh;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#home-image {
+  margin: 0;
+  width: 100%;
+  max-height: 100vh;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+li {
+  margin: 0 15px;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(230, 89, 8);
+  text-decoration: solid;
+  transform: scale(1.1, 1.1);
+  background-color: transparent;
+  border: 0.5px solid rgb(230, 89, 8);
+  transition: all 0.4s;
+}
+
+#about-page {
+  margin-top: 50px;
+  padding: 30px 20px 30px 20px;
+  font-size: 1.4rem;
+}
+#product-services {
+  background: whitesmoke;
+  padding: 20px;
+  margin: 0 20px;
+}
+#inverters {
+  display: flex;
+  padding: 20px;
+}
+#inverter-image:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+#solar-panels {
+  margin: 0 20px;
+  margin-top: 100px;
+  display: flex;
+}
+.solar-type {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+#solar-image {
+  width: 100%;
+}
+#solar-image:hover {
+  cursor: pointer;
+  transform: scale(0.8, 0.8);
+}
+#solar-panels-writeUp {
+  flex-grow: 3;
+}
+
+#batteries {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0px;
+  padding: 20px;
+}
+
+#battery-type {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+#battery-image:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 3px solid gray;
+  margin: 20px 100px;
+  padding: 100px;
+  background: linear-gradient(120deg, blanchedalmond, rgb(222, 184, 135, 0.9));
+}
+#contact-us > h1 {
+  color: rgb(14, 13, 13);
+}
+#contact-us > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  line-height: 60px;
+  font-weight: bold;
+}
+#contact-us > a:hover {
+  border: none;
+}
+#twitter {
+  color: rgb(65, 185, 221);
+}
+#instagram {
+  color: rgb(247, 68, 98);
+}
+#email {
+  color: brown;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+/*ham-burger-css*/
+.nav-icon {
+  display: none;
+}
+.ham-burger {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 2px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 560px) {
+  #navbar {
+    background-color: blanchedalmond;
+    opacity: 0.8;
+    position: absolute;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  #home-image {
+    margin-top: 8vh;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    height: 92vh;
+    background-color: rgb(255, 235, 205, 0.8);
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.7s ease-in;
+    overflow-x: hidden;
+  }
+  a:hover {
+    background-color: transparent;
+    border: 0.5px solid rgb(230, 89, 8);
+    color: rgb(230, 89, 8);
+    border-radius: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100px;
+  }
+  p {
+    line-height: 45px;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .nav-inactive {
+    transform: translate(100%);
+  }
+  .close-links {
+    transform: translateX(100%);
+  }
+  .hide-nav {
+    display: none;
+  }
+  #solar-panels,
+  #inverters,
+  #batteries {
+    flex-direction: column;
+  }
+  #contact-us {
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    max-width: 100vw;
+  }
+  #contact-us > h1 {
+    font-size: 1.6rem;
+  }
+}

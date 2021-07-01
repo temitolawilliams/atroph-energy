@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/57c57c2e9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Start of Async Callbell Code -->
+    <script>
+      window.callbellSettings = {
+        token: "Qav6ALMauTDFp8T9P11TwTA3",
+      };
+    </script>
+    <script>
+      (function () {
+        var w = window;
+        var ic = w.callbell;
+        if (typeof ic === "function") {
+          ic("reattach_activator");
+          ic("update", callbellSettings);
+        } else {
+          var d = document;
+          var i = function () {
+            i.c(arguments);
+          };
+          i.q = [];
+          i.c = function (args) {
+            i.q.push(args);
+          };
+          w.Callbell = i;
+          var l = function () {
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src =
+              "https://dash.callbell.eu/include/" +
+              window.callbellSettings.token +
+              ".js";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+          };
+          if (w.attachEvent) {
+            w.attachEvent("onload", l);
+          } else {
+            w.addEventListener("load", l, false);
+          }
+        }
+      })();
+    </script>
+    <!-- End of Async Callbell Code -->
+
+    <title>Atroph Energy</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href=""
+        ><h1 id="logo">
+          Atroph Energy
+          <i class="fas fa-bolt"></i>
+          <i class="fas fa-power-off"></i></h1
+      ></a>
+      <div class="nav-links">
+        <ul>
+          <a href="#about-page"><li class="links">About us</li></a>
+          <a href="#products-services "
+            ><li class="links">Products &#38; Services</li></a
+          >
+          <a href="#contact-us"><li class="links">Contact Us</li></a>
+        </ul>
+      </div>
+
+      <div class="nav-icon">
+        <div class="ham-burger"></div>
+        <div class="ham-burger"></div>
+        <div class="ham-burger"></div>
+      </div>
+    </nav>
+    <img src="./images//atroph-site.jpg" alt="" id="home-image" />
+
+    <section id="about-page">
+      <h1>
+        We are a Solar-inverter alternate energy company, located in Lagos
+      </h1>
+      <p>
+        Atroph Energy was founded in 2019 and has tremendously helped
+        individuals and organisations in transforming their energy consumption,
+        provided an eco-friendly alternate source of energy and reduction in
+        energy consumption bills.
+      </p>
+      <p>
+        We do this by first observing individual or organisation energy need, we
+        then use our experience and expertise to determine the best
+        solar-inverter or inverter systems that will help to bring a better
+        energy utiliy experience so as to increase productivity.
+      </p>
+      <p>
+        We have installed solar-inverter systems both far and near, in cities
+        like Lagos, Enugu, Kaduna. We work on a 70 - 30 basis; you pay 70% of
+        the total money for the work to be completed so that we can get all the
+        necessary equipments and move the the gadgets to your location and upon
+        completion you pay up the 30% balance
+      </p>
+    </section>
+
+    <section id="products-services">
+      <div id="inverters">
+        <div id="inverter-write-up">
+          <h1>Inverter Systems</h1>
+          <p>
+            With a wide range between 1 - 100KVA, we can cater for both
+            individual and corporate power needs These inverter systems
+            effectively store power in Deep cycle or Lithium Batteries, and then
+            effectively, discharges the power when there is a cut off of power
+            supply either automatically or manually as required in the design.
+            When properly used, these system can serve for long.
+            <em>All products have 12 Months Warranty</em>
+          </p>
+        </div>
+        <div id="inverter-images">
+          <img
+            src="./images/inverter-image.jpg"
+            alt="inverter-image"
+            id="inverter-image"
+          />
+        </div>
+      </div>
+
+      <div id="solar-panels">
+        <div id="solar-panels-writeUp">
+          <h1>Solar Panels</h1>
+          <h5>
+            Our highly efficient solar panels converts energy from the sun to
+            electricity
+          </h5>
+          <p>
+            These solar panels are high generation panels with very high
+            tolerance for extreme weathers These Solar panels are connected with
+            the inverter and batteries to ensure uninterupted power supply
+          </p>
+          <ul class="solar-type">
+            <h6>We have a wide variety of solar panels</h6>
+            <li class="solar-variety">250 watts to 445watts</li>
+            <li class="solar-variety">
+              60 cell Bifacial mono PERC Double Glass to 72 cell Bifacial Mono
+              PERC
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="./images/solar_panel.jpg"
+            alt="solar-panels"
+            id="solar-image"
+          />
+        </div>
+      </div>
+
+      <div id="batteries">
+        <div id="battery-details">
+          <h1>Batteries</h1>
+          <p>
+            We have different batteries ranging from 150ah - 220ah of 12 Volts.
+            We mostly use tubular batteries in our installations as they are
+            better for long term use. They charge faster, hence more reliable
+          </p>
+          <ul id="battery-type">
+            <li>Tubular Batteries</li>
+            <li>Gel Batteries</li>
+            <li>AGM</li>
+          </ul>
+        </div>
+        <div id="battery-images">
+          <img
+            src="./images/deep cycle battery.jpg"
+            alt="battery-image"
+            id="battery-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us">
+      <h1>You can reach us on</h1>
+      <a
+        href="https://www.twitter.com/atrophenergy"
+        target="_blank"
+        id="twitter"
+        ><i class="fab fa-twitter"></i>&nbsp;Twitter</a
+      >
+      <a
+        href="https:www.instagram.com/atrophenergy"
+        id="instagram"
+        target="_blank"
+        ><i class="fab fa-instagram"></i>&nbsp;Instagram</a
+      >
+      <a
+        href="mailto: atrophenergy@gmail.com?subject= &body="
+        id="email"
+        target="_blank"
+        ><i class="fas fa-envelope-square"></i> &nbsp;Email</a
+      >
+
+      <a href="tel:+2348099997977">08099997977</a>
+    </section>
+
+    <footer>&copy; AtrophEnergy 2021</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
